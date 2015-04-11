@@ -4,7 +4,7 @@ Plugin Name: WP-Uighur-Fonts
 Plugin URI: http://doghap.net/wp-uighur-fonts.html
 Description: WordPress نىڭ ئۇيغۇرچە نەشىرى ئۈچۈن ئۇيغۇرچە فونت ۋە كىرگۈزگۈچ تەمىنلەيدۇ.  WordPress 3.8 ئۇيغۇرچە نەشىرى ۋە شۇنىڭدىن يۇقىرى نەشىرلىرىگە ماس كېلىدۇ.سىز <code>ئىشلەتكۈچىلەر »» ئارخىبىڭىز </code>دېگەن يەردىن خەت نۇسقىسى تاللىيالايسىز. ئالدى ۋە ئارقا سەھنىدە بىۋاستە ئۇيغۇرچە كىرگۈزەلەيسىز.
 Author: Doghap.Net(دوغاپ)
-Version: 1.1.0
+Version: 1.1.1
 Author URI: http://www.doghap.net
 */
 

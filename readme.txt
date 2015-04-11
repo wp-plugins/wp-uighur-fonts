@@ -4,7 +4,7 @@ Donate link:
 Tags: Uighur font
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL2
 
 بۇ قىستۇرما Wordpress ئۇيغۇرچە نەشرىگە فونت تونۇتۇش ۋە ئۇيغۇرچىنى بىۋاستە تونۇتۇشتا ئىشلىتىلىدۇ. ئارقا بەتتىكى <code>تەڭشەكلەر»» ئادەتتىكى </code> ئىچىدىن ئالدە سەھنىگە خەت تونۇتۇش تونۇتماسلىقنى تاللىيالايسىز.
