@@ -114,13 +114,13 @@ function fontface_css_frontend () {
 /*
  * register backend css
  */
-add_action('admin_init','fontface_css_beckend');
-add_action('login_enqueue_scripts', 'fontface_css_beckend');
-function fontface_css_beckend () {
+add_action('admin_init','fontface_css_backend');
+add_action('login_enqueue_scripts', 'fontface_css_backend');
+function fontface_css_backend () {
 	if(esc_attr( get_the_author_meta( 'user_font_family', get_current_user_ID() ) ) == 'UKIJ Tuz Tom'){
-		wp_enqueue_style('beckend_font_css', plugins_url('includes/backend_font_2.css', __FILE__));
+		wp_enqueue_style('backend_font_css', plugins_url('includes/backend_font_2.css', __FILE__));
 	}else{
-		wp_enqueue_style('beckend_font_css', plugins_url('includes/backend_font.css', __FILE__));
+		wp_enqueue_style('backend_font_css', plugins_url('includes/backend_font.css', __FILE__));
 	}
 }
 
@@ -132,9 +132,9 @@ function mce_new_css($mce_css) {
   if (! empty($mce_css)) $mce_css .= ',';
 
   if(esc_attr( get_the_author_meta( 'user_font_family', get_current_user_ID() ) ) == 'UKIJ Tuz Tom'){
-		$mce_css .= plugins_url('includes/beckend_font_2.css', __FILE__);
+		$mce_css .= plugins_url('includes/backend_font_2.css', __FILE__);
 	}else{
-		$mce_css .= plugins_url('includes/beckend_font.css', __FILE__);
+		$mce_css .= plugins_url('includes/backend_font.css', __FILE__);
 	}
   
   return $mce_css;
