@@ -105,9 +105,9 @@ $value = html_entity_decode( get_option( 'use_frontend_font' ) );
 if($value == 'yes'){add_action('wp_enqueue_scripts','fontface_css_frontend');}
 function fontface_css_frontend () {
 	if(esc_attr( get_the_author_meta( 'user_font_family', get_current_user_ID() ) ) == 'UKIJ Tuz Tom'){
-		wp_enqueue_style('ug_frontend_font_css', plugins_url('includes/font_frontend_2.css', __FILE__));
+		wp_enqueue_style('frontend_font_css', plugins_url('includes/font_frontend_2.css', __FILE__));
 	}else{
-		wp_enqueue_style('ug_frontend_font_css', plugins_url('includes/font_frontend.css', __FILE__));
+		wp_enqueue_style('frontend_font_css', plugins_url('includes/font_frontend.css', __FILE__));
 	}
 }
 
@@ -118,9 +118,9 @@ add_action('admin_init','fontface_css_beckend');
 add_action('login_enqueue_scripts', 'fontface_css_beckend');
 function fontface_css_beckend () {
 	if(esc_attr( get_the_author_meta( 'user_font_family', get_current_user_ID() ) ) == 'UKIJ Tuz Tom'){
-		wp_enqueue_style('ug_beckend_font_css', plugins_url('includes/ug_beckend_font_2.css', __FILE__));
+		wp_enqueue_style('beckend_font_css', plugins_url('includes/beckend_font_2.css', __FILE__));
 	}else{
-		wp_enqueue_style('ug_beckend_font_css', plugins_url('includes/ug_beckend_font.css', __FILE__));
+		wp_enqueue_style('beckend_font_css', plugins_url('includes/beckend_font.css', __FILE__));
 	}
 }
 
@@ -132,9 +132,9 @@ function mce_new_css($mce_css) {
   if (! empty($mce_css)) $mce_css .= ',';
 
   if(esc_attr( get_the_author_meta( 'user_font_family', get_current_user_ID() ) ) == 'UKIJ Tuz Tom'){
-		$mce_css .= plugins_url('includes/font_backtend_2.css', __FILE__);
+		$mce_css .= plugins_url('includes/beckend_font_2.css', __FILE__);
 	}else{
-		$mce_css .= plugins_url('includes/font_backtend.css', __FILE__);
+		$mce_css .= plugins_url('includes/beckend_font.css', __FILE__);
 	}
   
   return $mce_css;
