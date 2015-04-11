@@ -40,7 +40,8 @@ function my_register_settings()
 function add_my_settings_field() {
     $value = html_entity_decode( get_option( 'use_frontend_font' ) );
     $checked = ($value=='yes') ? 'checked="checked"' : '';
-    echo '<input type="hidden" name="use_frontend_font" value="no" /><input id="clinto_under_maintenance" type="checkbox" '.$checked.' name="use_frontend_font" value="yes" />';
+
+    echo '<input type="hidden" name="use_frontend_font" value="no" /><label for="use_frontend_font"><input id="use_frontend_font" type="checkbox" '.$checked.' name="use_frontend_font" value="yes" />ئىشلىتىش</label>';
 }
 
 /*
